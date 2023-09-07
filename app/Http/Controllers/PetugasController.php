@@ -19,7 +19,7 @@ class PetugasController extends Controller
      */
     public function create()
     {
-        return view('template.perpus.petugas');
+        return view('petugas.petugas');
     }
 
     /**
