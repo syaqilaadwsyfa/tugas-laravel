@@ -17,11 +17,11 @@
 <div class="wrapper">
 
   <!-- Navbar -->
- @include('template.separate.navbar')
+ @include('template.navbar')
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  @include('template.separate.sidebar')
+  @include('template.sidebar')
   <!-- /.Main Sidebar Container -->
   
   <!-- Content Wrapper. Contains page content -->
@@ -31,7 +31,7 @@
   <!-- /.content-wrapper -->
 
 <!-- Footer -->
-@include('template.separate.footer')
+@include('template.footer')
 <!-- /footer -->
 
   <!-- Control Sidebar -->

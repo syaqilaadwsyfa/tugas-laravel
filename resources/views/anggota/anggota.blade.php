@@ -33,7 +33,7 @@
                   </div>
                 <!-- /.card-body -->
 
-                <div class="card-footer">
+                <div class="card-footer" style="background-color: #ffffff">
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="submit" class="btn btn-primary">Reset</button>
                 </div>
