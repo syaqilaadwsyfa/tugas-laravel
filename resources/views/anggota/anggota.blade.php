@@ -15,7 +15,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Kode Anggota</label>
-                    <input type="text" class="form-control" name="kode_anggota" placeholder="Input Kode Anggota">
+                    <input type="text" id="kode_anggota" class="form-control" name="kode_anggota" placeholder="Input Kode Anggota">
                     <label for="exampleInputEmail1">Nama Anggota</label>
                     <input type="text" class="form-control" name="nama_anggota" placeholder="Input Nama Anggota">
                         <label>Jenis Kelamin</label>
@@ -35,8 +35,16 @@
 
                 <div class="card-footer" style="background-color: #ffffff">
                   <button type="submit" class="btn btn-primary">Submit</button>
-                  <button type="submit" class="btn btn-primary">Reset</button>
+                  <button type="submit" class="btn btn-primary" onclick="reset()">Reset</button>
                 </div>
               </form>
             </div>
+
+            <script>
+              let kodeAnggota = document.getElementById('kode_anggota')
+
+              function reset() {
+                kodeAnggota.clear()
+              }
+            </script>
 @endsection

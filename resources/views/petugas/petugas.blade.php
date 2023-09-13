@@ -27,7 +27,7 @@
 
                 <div class="card-footer" style="background-color: #ffffff">
                   <button type="submit" name="submit" value="Save" class="btn btn-primary">Submit</button>
-                  <button type="submit" class="btn btn-primary">Reset</button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
                 </div>
               </form>
             </div>
