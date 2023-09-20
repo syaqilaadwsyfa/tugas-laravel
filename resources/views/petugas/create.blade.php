@@ -4,20 +4,28 @@
 
 @section('content')
 
-<div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Form Input Data Petugas</h3>
-              </div>
+<div class="content-wrapper">
+    <div class="col-md-12">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Form Input Data Petugas</h3>
+          </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/petugas/store" method="POST">
+              <form action="{{ route('petugas.store') }}" method="POST">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nama Petugas</label>
                     <input type="text" class="form-control" name="nama_petugas" placeholder="Input Nama Petugas">
-                    <label for="exampleInputEmail1">Jabatan Petugas</label>
-                    <input type="text" class="form-control" name="jabatan_petugas" placeholder="Input Jabatan Petugas">
+                    <label>Jabatan Petugas</label>
+                        <select type="text" name="jabatan_petugas" class="form-control">
+                          <option disabled selected>Pilih Jabatan Petugas</option>
+                          <option value="Kepala Perpustakaan">Kepala Perpustakaan</option>
+                          <option value="Asisten Kepala Perpustakaan">Asisten Kepala Perpustakaan</option>
+                          <option value="Administrasi">Administrasi</option>
+                        </select>
+
                     <label for="exampleInputEmail1">No Telepon</label>
                     <input type="number" class="form-control" name="no_telp_petugas" placeholder="Input No Telepon Petugas">
                     <label for="exampleInputEmail1">Alamat Petugas</label>
